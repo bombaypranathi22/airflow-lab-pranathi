@@ -1,7 +1,8 @@
 Airflow Lab – KMeans Pipeline
 📌 Overview
 This project implements an end-to-end Apache Airflow pipeline for a machine learning workflow using KMeans clustering. The pipeline automates data processing and model lifecycle steps using Airflow DAGs.
-⚙️ Workflow Steps
+ 
+  Workflow Steps
 The DAG (pranathi_airflow_kmeans_lab) consists of the following tasks:
 load_data_task
 Loads input dataset from CSV file.
@@ -11,13 +12,16 @@ build_save_model_task
 Trains a KMeans clustering model and saves it.
 load_model_task
 Loads the trained model for validation/use.
-🛠 Tech Stack
+ 
+  Tech Stack
 Python
 Apache Airflow
 Docker
 Scikit-learn
 Pandas
-📂 Project Structure
+ 
+  
+  Project Structure
 .
 ├── dags/                 # Airflow DAG definitions
 ├── src/                  # Python scripts for pipeline tasks
@@ -27,7 +31,8 @@ Pandas
 ├── setup.sh              # Setup script
 ├── .gitignore
 └── README.md
-🚀 How to Run
+  
+  How to Run
 Step 1: Start Docker Desktop
 Step 2: Initialize Airflow
 docker compose up airflow-init
@@ -39,7 +44,8 @@ http://localhost:8080
 Login:
 Username: airflow2
 Password: airflow2
-📊 DAG Details
+ 
+  DAG Details
 DAG Name: pranathi_airflow_kmeans_lab
 Owner: Pranathi
 Schedule: Manual trigger
