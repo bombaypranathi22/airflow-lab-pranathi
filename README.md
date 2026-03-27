@@ -1,57 +1,37 @@
-Airflow Lab – KMeans Pipeline
-📌 Overview
-This project implements an end-to-end Apache Airflow pipeline for a machine learning workflow using KMeans clustering. The pipeline automates data processing and model lifecycle steps using Airflow DAGs.
- 
-  Workflow Steps
-The DAG (pranathi_airflow_kmeans_lab) consists of the following tasks:
-load_data_task
-Loads input dataset from CSV file.
-data_preprocessing_task
-Cleans and prepares data for modeling.
-build_save_model_task
-Trains a KMeans clustering model and saves it.
-load_model_task
-Loads the trained model for validation/use.
- 
-  Tech Stack
-Python
-Apache Airflow
-Docker
-Scikit-learn
-Pandas
- 
-  
-  Project Structure
-.
-├── dags/                 # Airflow DAG definitions
-├── src/                  # Python scripts for pipeline tasks
-├── data/                 # Input dataset
-├── logs/                 # Airflow logs (ignored in Git)
-├── docker-compose.yaml   # Airflow setup
-├── setup.sh              # Setup script
-├── .gitignore
-└── README.md
-  
-  How to Run
-Step 1: Start Docker Desktop
-Step 2: Initialize Airflow
-docker compose up airflow-init
-Step 3: Start Airflow Services
-docker compose up
-Step 4: Open Airflow UI
-Go to:
-http://localhost:8080
-Login:
-Username: airflow2
-Password: airflow2
- 
-  DAG Details
-DAG Name: pranathi_airflow_kmeans_lab
-Owner: Pranathi
-Schedule: Manual trigger
-Tasks: 4
+ # Airflow Lab – KMeans Pipeline
 
+## 📌 Overview
+This project implements an end-to-end **Apache Airflow pipeline** for a machine learning workflow using **KMeans clustering**. The pipeline automates data processing and model lifecycle steps using Airflow DAGs.
 
+---
+
+## ⚙️ Workflow Steps
+The DAG (`pranathi_airflow_kmeans_lab`) consists of the following tasks:
+
+1. **load_data_task**  
+   Loads input dataset from CSV file.
+
+2. **data_preprocessing_task**  
+   Cleans and prepares data for modeling.
+
+3. **build_save_model_task**  
+   Trains a KMeans clustering model and saves it.
+
+4. **load_model_task**  
+   Loads the trained model for validation/use.
+
+---
+
+## 🛠 Tech Stack
+- Python  
+- Apache Airflow  
+- Docker  
+- Scikit-learn  
+- Pandas  
+
+---
+
+## 📂 Project Structure
 # Airflow lab
 
 - In order to install Airflow using docker you can watch our [Airflow Lab1 Tutorial Video](https://youtu.be/exFSeGUbn4Q?feature=shared)
