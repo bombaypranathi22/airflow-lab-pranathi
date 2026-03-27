@@ -31,7 +31,44 @@ The DAG (`pranathi_airflow_kmeans_lab`) consists of the following tasks:
 
 ---
 
-## 📂 Project Structure
+
+---
+
+## 🚀 How to Run
+
+### Step 1: Start Docker Desktop
+
+### Step 2: Initialize Airflow
+
+### Step 3: Start Airflow Services
+
+### Step 4: Open Airflow UI
+Go to:
+
+Login:
+- Username: `airflow2`
+- Password: `airflow2`
+
+---
+
+## 📊 DAG Details
+- **DAG Name:** `pranathi_airflow_kmeans_lab`
+- **Owner:** Pranathi  
+- **Schedule:** Manual trigger  
+- **Tasks:** 4  
+
+---
+
+## ✅ Output
+- Successfully runs a complete ML pipeline  
+- Generates trained KMeans model  
+- Logs execution using Airflow  
+
+---
+
+## 👩‍💻 Author
+**Pranathi**  
+MS Data Analytics Engineering – Northeastern University
 # Airflow lab
 
 - In order to install Airflow using docker you can watch our [Airflow Lab1 Tutorial Video](https://youtu.be/exFSeGUbn4Q?feature=shared)
